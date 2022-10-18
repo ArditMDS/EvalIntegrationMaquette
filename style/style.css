@@ -169,13 +169,15 @@ body {
 .fondBleu .containerDesTroisBox .imageBox {
   height: 224px;
   width: 320px;
-  margin: -32px 0px 0px 32px;
 }
 .fondBleu .containerDesTroisBox .test {
-  position: absolute;
+  position: relative;
+  margin: -32px 0px 0px 32px;
 }
 .fondBleu .containerDesTroisBox .test .petit {
   background-color: #C1F7D5;
+  position: absolute;
+  top: 0px;
   height: 224px;
   width: 320px;
   opacity: 0.76;
