@@ -24,7 +24,7 @@ body {
                 margin-top: 34px;
                 margin-right: 160px;
             }
-        }
+}
 .gras {
     margin: 0px;
     font-weight: bold;
@@ -57,6 +57,11 @@ body {
     width: 160px;
     background-color: @colorTxt;
 }
+.filtreVert {
+        background-color: @colorVert;
+        height: @tailleImageFiltre;
+        opacity: 0.76;
+    }
 .containerImage{
     position: relative;
     height: @tailleImageFiltre;
@@ -64,11 +69,7 @@ body {
     margin-top: 0px;
     background-image: url("../images/imageAfrique.jpg");
     background-size: 100vw;
-    .filtreVert {
-        background-color: @colorVert;
-        height: @tailleImageFiltre;
-        opacity: 0.76;
-    }
+    
     .containerCarreEtTxt {
         position: absolute;
         top: 0;
@@ -174,7 +175,121 @@ body {
             margin: -32px 0px 0px 32px;
             
         }
+        .test {
+            position: absolute;
+            .petit {
+            background-color: @colorVert;
+            height: 224px;
+            width: 320px;
+            opacity: 0.76;
+        }
+        }
+        
     }
 }
-
-
+@media screen and (max-width: 600px) {
+    .containerBarreNav {
+        height: 500px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column ;
+            .logo {
+                width: 300px;
+                height: 20px;
+                font-size: 22px;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                color: @colorTxt;
+            }
+            .btnDonate {
+                margin-top: 0px;
+                margin-right: 0px;
+            }
+            .gras {
+                margin: 0px;
+            }
+            .margeTxt {
+                margin: 0;
+            }
+    }
+    .containerImage{
+        position: relative;
+        height: @tailleImageFiltre;
+        width: 100%;
+        height: 135vh;
+        margin-top: 0px;
+        background-image: url("../images/imageAfrique.jpg");
+        .filtreVert {
+            background-color: @colorVert;
+            height: 135vh;
+            opacity: 0.76;
+        }
+        .containerCarreEtTxt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column ;
+            padding-top: 0px;
+        }
+        .containerCarreBlanc {
+            width: 100%;
+            margin-right: 0px;
+            .txtSurFondBlanc {
+                text-align: center;
+                width: 100%;
+                font-size: 35px;
+                margin-top: 15px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                color: @colorTxt;
+            }
+            .readMore {
+                width: 100%;
+                text-align: center;
+                margin-left: 0px;;
+            }
+        }  
+        .txtSlogan {
+            color: @colorTxt;
+            margin-top: 160px;
+        }
+    }
+    .containerTxtSousImage {
+        height: 550px;
+        .containerBloc {
+            flex-direction: column ;
+        }
+        .titreChangeable {
+            font-size: 20px;
+        }
+    }
+    .fondBleu {
+        background-color: @colorTxt;
+        padding: 88px 80px 80px 80px;
+        .txtFondBleu {
+            color: white;
+            font-size: 25px;
+            height: 200px;
+            width: 100%;
+        }
+        .containerDesTroisBox {
+            display: flex;
+            flex-direction: column ;
+            justify-content: space-between;
+            align-items: center;
+            .box {
+                background-color: white;
+                height: 560px;
+                width: 320px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
