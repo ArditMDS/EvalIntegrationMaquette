@@ -185,7 +185,6 @@ body {
 @media screen and (max-width: 600px) {
   .containerBarreNav {
     height: 500px;
-    display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column ;
@@ -211,14 +210,12 @@ body {
   }
   .containerImage {
     position: relative;
-    height: calc(100vh - 128px);
     width: 100%;
     height: 135vh;
     margin-top: 0px;
     background-image: url("../images/imageAfrique.jpg");
   }
   .containerImage .filtreVert {
-    background-color: #C1F7D5;
     height: 135vh;
     opacity: 0.76;
   }
@@ -228,7 +225,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column ;
@@ -245,7 +241,6 @@ body {
     margin-top: 15px;
     margin-bottom: 0px;
     margin-left: 0px;
-    color: #354463fb;
   }
   .containerImage .containerCarreBlanc .readMore {
     width: 100%;
@@ -266,23 +261,19 @@ body {
     font-size: 20px;
   }
   .fondBleu {
-    background-color: #354463fb;
     padding: 88px 80px 80px 80px;
   }
   .fondBleu .txtFondBleu {
-    color: white;
     font-size: 25px;
     height: 200px;
     width: 100%;
   }
   .fondBleu .containerDesTroisBox {
-    display: flex;
     flex-direction: column ;
     justify-content: space-between;
     align-items: center;
   }
   .fondBleu .containerDesTroisBox .box {
-    background-color: white;
     height: 560px;
     width: 320px;
     margin-bottom: 60px;

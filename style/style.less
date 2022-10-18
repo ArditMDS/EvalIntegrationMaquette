@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
-.containerBarreNav {
+.containerBarreNav { // Barre de navigation
         height: 128px;
         display: flex;
         align-content: center;
@@ -62,7 +62,7 @@ body {
         height: @tailleImageFiltre;
         opacity: 0.76;
     }
-.containerImage{
+.containerImage{ // Image du site avec le container blanc et le slogan en blanc
     position: relative;
     height: @tailleImageFiltre;
     width: 100%;
@@ -113,7 +113,7 @@ body {
         padding-left: 67.5px;
     }
 }
-.containerTxtSousImage {
+.containerTxtSousImage { // Container sous l'image principale avec des informations
     height: 240px;
     width: 100%;
     background-color: @colorVert;
@@ -137,7 +137,7 @@ body {
         font-size: 16px;
     }
 }
-.fondBleu {
+.fondBleu { //Container bleu avec les 3 Box avec les petites photos
     background-color: @colorTxt;
     padding: 88px 160px 147px 160px;
     .blanc {
@@ -149,7 +149,7 @@ body {
         font-size: 44px;
         width: 1200px;
     }
-    .containerDesTroisBox {
+    .containerDesTroisBox { // Les boites avec les photos, les textes
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -189,10 +189,12 @@ body {
         
     }
 }
+
+// Responsive pour les ecrans plus petit ou égal à 600px
+
 @media screen and (max-width: 600px) {
     .containerBarreNav {
         height: 500px;
-        display: flex;
         align-content: center;
         align-items: center;
         flex-direction: column ;
@@ -218,13 +220,11 @@ body {
     }
     .containerImage{
         position: relative;
-        height: @tailleImageFiltre;
         width: 100%;
         height: 135vh;
         margin-top: 0px;
         background-image: url("../images/imageAfrique.jpg");
         .filtreVert {
-            background-color: @colorVert;
             height: 135vh;
             opacity: 0.76;
         }
@@ -234,7 +234,6 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column ;
@@ -250,7 +249,6 @@ body {
                 margin-top: 15px;
                 margin-bottom: 0px;
                 margin-left: 0px;
-                color: @colorTxt;
             }
             .readMore {
                 width: 100%;
@@ -273,21 +271,17 @@ body {
         }
     }
     .fondBleu {
-        background-color: @colorTxt;
         padding: 88px 80px 80px 80px;
         .txtFondBleu {
-            color: white;
             font-size: 25px;
             height: 200px;
             width: 100%;
         }
         .containerDesTroisBox {
-            display: flex;
             flex-direction: column ;
             justify-content: space-between;
             align-items: center;
             .box {
-                background-color: white;
                 height: 560px;
                 width: 320px;
                 margin-bottom: 60px;
